@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilização do DOM</title>
+    <style> 
+        body {
+            background: rgb(59, 60, 59);
+            color: white;
+            font: 14pt Verdana;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os primeiros passos com o DOM</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aspernatur cupiditate earum quibusdam? Itaque soluta incidunt culpa maiores facilis excepturi iure quas a exercitationem tempore, harum dolorum qui possimus voluptate.</p> 
+    <div id="botao">Clique aqui</div>
+    <script>
+        //window.document.write(window.navigator.appName)
+        //window.document.write(window.document.URL)
+        //selecionar elementos
+        //pode selecionar por: marca,id,nome,classe e seletor.
+        //var corpo = window.document.body
+        //corpo.style.background = 'black'
+        //var p1 = window.document.getElementsByTagName('p')[0] 
+        //window.document.write(p1.innerText)
+        //por id
+        //var botao = window.document.getElementById('botao')
+        //var botao = window.document.getElementById('botao').innerText='Olá!'
+        //botao.style.background = 'green'
+        //por seletor
+        var d = window.document.querySelector('div#botao') //class (.) id (#)
+        d.style.background='blue'
+    </script>
+</body>
+</html>
